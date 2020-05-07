@@ -1,6 +1,6 @@
 # 融合红外和深度图像的人体检测模型
 本文是参加[IPHD竞赛](http://chalearnlap.cvc.uab.es/challenge/34/description/)的代码，内容是基于红外图像的人体检测模型，基于深度图像的人体检测模型，以及基于[WBF算法](https://www.groundai.com/project/weighted-boxes-fusion-ensembling-boxes-for-object-detection-models/1)在决策层融合两个模态的模型
-[![单模型与融合模型]](https://github.com/cairangxianmu/Human-detection-model-based-on-thermal-and-depth-images/blob/master/%E8%9E%8D%E5%90%88.png 单模型与融合模型结果对比)
+![单模型与融合模型](https://github.com/cairangxianmu/Human-detection-model-based-on-thermal-and-depth-images/blob/master/%E8%9E%8D%E5%90%88.png "单模型与融合模型结果对比")
 
 # 上手指南
 以下指南将帮助你在本地机器上安装和运行该项目，进行开发和测试。关于如何将该项目部署到在线环境，请参考部署小节。
