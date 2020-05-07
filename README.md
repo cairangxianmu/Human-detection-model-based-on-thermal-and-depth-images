@@ -21,20 +21,22 @@
 2. 我们的数据是使用IPHD竞赛提供的数据:[下载地址](http://chalearnlap.cvc.uab.es/dataset/34/description/)，如果你想训练自己的模型，需要先将数据转化为COCO格式数据，VOC格式数据，COCO格式数据按照下面内容配置：
 
 ```
-|mmdetection|
-                    |checkpoint|
-	    |                |trained_thermal.pth|
-	    |                |data|
-	    |                |        |instances_train.json|
-	    |                |        |instances_test.json|
-	    |                |        |test_images|
-                       |                |        |                  |vid001.png
-                       |                |        |                  |vid002.png
-                       |                |        |                  |.....
-	    |                |        |train_images|
-                       |                |        |                  |vid001.png
-                       |                |        |                  |vid002.png
-                       |                |        |                  |.....
+mmdetection
+├── checkpoint
+|   ├── trained_thermal.pth
+├── data
+|   ├── coco
+|   |   ├──annotations
+|   |   |   ├── instances_train.json
+|   |   |   ├── instances_test.json
+|   |   ├── train_images
+|   |   |   ├── vid001.png
+|   |   |   ├── vid002.png
+|   |   |   ├── ...
+|   |   ├── test_images
+|   |   |   ├── vid001.png
+|   |   |   ├── vid002.png
+|   |   |   ├── ...
 ```
 
 将自己的数据转化为COCO格式的代码在[data_generate](https://github.com/cairangxianmu/Human-detection-model-based-on-thermal-and-depth-images/tree/master/data_generate)里
