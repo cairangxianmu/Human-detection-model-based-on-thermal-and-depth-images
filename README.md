@@ -18,7 +18,7 @@
 我们的代码在mmdetection框架训练测试。 可以通过[官网指南](https://github.com/open-mmlab/mmdetection/blob/master/docs/install.md)安装，也可以按照我写的[安装教程](https://blog.csdn.net/qq_33897832/article/details/103995636)安装环境。
 # 红外图像增强
 我们对红外图像进行了增强去去燥，代码在文件下，效果如下：
-![图像增强(/图像.png "图像增强方法效果")
+![图像增强](/图像.png "图像增强方法效果")
 # 测试步骤
 1. 你可以下载我们的红外图像预训练模型直接进行结果测试。
 2. 我们的数据是使用IPHD竞赛提供的数据:[下载地址](http://chalearnlap.cvc.uab.es/dataset/34/description/)，如果你想训练自己的模型，需要先将数据转化为COCO格式数据，VOC格式数据，COCO格式数据按照下面内容配置：
