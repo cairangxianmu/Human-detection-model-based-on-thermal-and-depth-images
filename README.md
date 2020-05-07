@@ -6,14 +6,14 @@
 
 # 安装要求
 依赖环境:
-	1. Python 3.5+
-	2. >=PyTorch 1.1
-	3. >=CUDA 9.0
-	4. NCCL 2
-	5. >=GCC 4.9
-	6. mmcv
-	7. number of GPUs >2
-        8. mmdetection
+1. Python 3.5+
+2. >=PyTorch 1.1
+3. >=CUDA 9.0
+4. NCCL 2
+5. >=GCC 4.9
+6. mmcv
+7. number of GPUs >2
+8. mmdetection
 我们的代码在mmdetection框架训练测试。 可以通过[官网指南](https://github.com/open-mmlab/mmdetection/blob/master/docs/install.md)安装，也可以按照我写的[安装教程](https://blog.csdn.net/qq_33897832/article/details/103995636)安装环境。
 
 # 测试步骤
@@ -40,6 +40,7 @@ mmdetection
 ```
 
 将自己的数据转化为COCO格式的代码在[data_generate](https://github.com/cairangxianmu/Human-detection-model-based-on-thermal-and-depth-images/tree/master/data_generate)里
+
 3. 运行如下代码：
 
 ```
