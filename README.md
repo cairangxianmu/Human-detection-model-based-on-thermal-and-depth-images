@@ -1,6 +1,6 @@
 # 融合红外和深度图像的人体检测模型
 本文是参加[IPHD竞赛](http://chalearnlap.cvc.uab.es/challenge/34/description/)的代码，内容是基于红外图像的人体检测模型，基于深度图像的人体检测模型，以及基于[WBF算法](https://www.groundai.com/project/weighted-boxes-fusion-ensembling-boxes-for-object-detection-models/1)在决策层融合两个模态的模型
-[单模型与融合模型](https://github.com/cairangxianmu/Human-detection-model-based-on-thermal-and-depth-images/blob/master/%E8%9E%8D%E5%90%88.png)
+![单模型与融合模型](https://github.com/cairangxianmu/Human-detection-model-based-on-thermal-and-depth-images/blob/master/%E8%9E%8D%E5%90%88.png 单模型与融合模型结果对比)
 
 # 上手指南
 以下指南将帮助你在本地机器上安装和运行该项目，进行开发和测试。关于如何将该项目部署到在线环境，请参考部署小节。
@@ -18,7 +18,7 @@
 我们的代码在mmdetection框架训练测试。 可以通过[官网指南](https://github.com/open-mmlab/mmdetection/blob/master/docs/install.md)安装，也可以按照我写的[安装教程](https://blog.csdn.net/qq_33897832/article/details/103995636)安装环境。
 # 红外图像增强
 我们对红外图像进行了增强去去燥，代码在文件下，效果如下：
-[图像增强]()
+![图像增强](图像.png 图像增强方法效果)
 # 测试步骤
 1. 你可以下载我们的红外图像预训练模型直接进行结果测试。
 2. 我们的数据是使用IPHD竞赛提供的数据:[下载地址](http://chalearnlap.cvc.uab.es/dataset/34/description/)，如果你想训练自己的模型，需要先将数据转化为COCO格式数据，VOC格式数据，COCO格式数据按照下面内容配置：
