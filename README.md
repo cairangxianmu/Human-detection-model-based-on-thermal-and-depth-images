@@ -39,13 +39,13 @@
 		  
 ----
 
-将自己的数据转化为COCO格式的代码在data_generate里。
+将自己的数据转化为COCO格式的代码在[data_generate](https://github.com/cairangxianmu/Human-detection-model-based-on-thermal-and-depth-images/tree/master/data_generate)里
 3. 运行如下代码：
 
-'''
-cd mmdetection
+
+' cd mmdetection '
 ./tools/FG_dist_test.sh
-'''
+
 
 运行完成后会生成predictions.pkl的结果
 如果需要在图片上显示测试结果，运行如下代码（需要opencv环境支持）：
