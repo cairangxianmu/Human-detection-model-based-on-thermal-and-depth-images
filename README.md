@@ -20,8 +20,7 @@
 1. 你可以下载我们的红外图像预训练模型直接进行结果测试。
 2. 我们的数据是使用IPHD竞赛提供的数据:[下载地址](http://chalearnlap.cvc.uab.es/dataset/34/description/)，如果你想训练自己的模型，需要先将数据转化为COCO格式数据，VOC格式数据，COCO格式数据按照下面内容配置：
 
-----
-
+```
 |mmdetection|
                     |checkpoint|
 	    |                |trained_thermal.pth|
@@ -36,24 +35,23 @@
                        |                |        |                  |vid001.png
                        |                |        |                  |vid002.png
                        |                |        |                  |.....
-		  
-----
+```
 
 将自己的数据转化为COCO格式的代码在[data_generate](https://github.com/cairangxianmu/Human-detection-model-based-on-thermal-and-depth-images/tree/master/data_generate)里
 3. 运行如下代码：
 
-
-' cd mmdetection '
+```
+cd mmdetection 
 ./tools/FG_dist_test.sh
-
+```
 
 运行完成后会生成predictions.pkl的结果
 如果需要在图片上显示测试结果，运行如下代码（需要opencv环境支持）：
 
-'''
+```
 #python tools/test.py ${配置文件} ${训练好的模型} [--out ${保存输出结果的位置}] [--eval ${验证类型}] [--show](此项可显示每个图像检测后的结果)
 python tools/test.py configs/faster_rcnn_r50_fpn_1x.py work_dirs/faster_rcnn_r50_fpn_1x/epoch1.pth --eval bbox --show
-'''
+```
 
 更多模型训练及测试操作，参考我的[博文](https://blog.csdn.net/qq_33897832/article/details/103995636)，及[mmdetection官网](https://github.com/open-mmlab/mmdetection/blob/master/docs/getting_started.md)
 
